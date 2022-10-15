@@ -22,32 +22,31 @@ This project is a walk-through for creating a splunk indexer cluster in SplunkWe
 <h2>Program walk-through:</h2>
 
 
-![Install Splunk in 5 instances running in AWS with proper labels:] 
-(https://user-images.githubusercontent.com/112047285/195969636-38bc839a-4ab5-4a57-bbc6-cc5c5ecb09c1.png)
+
+<br />
+Install Splunk in 5 instances running in AWS with labels:  <br/>
+<img src="https://user-images.githubusercontent.com/112047285/195969636-38bc839a-4ab5-4a57-bbc6-cc5c5ecb09c1.png" height="80%" width="80%"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://imgur.com/tcTyMUE.PNG" height="80%" width="80%"/>
+Install a license on the cluster manager as License Master: <br/>
+<img src="https://user-images.githubusercontent.com/112047285/195970522-64fec077-6b2f-4585-b5aa-bef62fafcff5.png" height="80%" width="80%"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://imgur.com/a/V5byISk.PNG" height="80%" width="80%"/>
+Install License on the indexers and search head:  <br/>
+<img src="https://user-images.githubusercontent.com/112047285/195970754-52da1399-9b84-4c1a-98ec-288dadea0573.png" height="80%" width="80%"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://imgur.com/ihxH4IO" height="80%" width="80%"/>
+Enable clustering on the Cluster  Master to become the Master node and on the indexers as peer nodes:  <br/>
+<img src="https://user-images.githubusercontent.com/112047285/195971004-d9acf47b-017a-4177-aa89-6381f2ceab38.png" height="80%" width="80%"/>
+                                                             
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Enable distributed search on the search head:  <br/>
+<img src="https://user-images.githubusercontent.com/112047285/195971158-d01a4c98-8f84-49d6-a1e0-82c0cd5f2546.png" height="80%" width="80%"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Verify distributed search and clustering Configurations:  <br/>
+<img src="https://user-images.githubusercontent.com/112047285/195971257-ae2a6155-bf6d-4c90-b21e-945263037a2f.png" height="80%" width="80%"/>
 </p>
 
 <!--
